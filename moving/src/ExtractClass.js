@@ -2,11 +2,8 @@ function DNI(aDNI) {
 	this.DNI='';
 
 	this.setDNI = function(aDNI) {
-		if(this.validateDNI(aDNI)){
-			this.DNI=aDNI;
-		}else{
-			throw 'bad DNI';
-		}
+		this.validateDNI(aDNI);
+		this.DNI=aDNI;
 	};
 
 	this.validateDNI=function(aDNI){
