@@ -1,9 +1,11 @@
 describe("Persona", function() {
 
   var persona;
+  var dni;
 
   beforeEach(function() {
     persona = new Persona();
+    dni = new DNI('29172168a');
   });
 
   it(" has dni", function() {
@@ -12,5 +14,8 @@ describe("Persona", function() {
     expect(persona.getDNI()).toEqual('29172168a');
   });
 
+  it(" computes dni letters", function() {
+    expect(persona.computeLetter(dni)).toEqual('a');
+  });
  
 });
