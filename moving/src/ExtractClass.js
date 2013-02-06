@@ -1,3 +1,23 @@
+function DNI(aDNI) {
+	this.DNI='';
+
+	this.setDNI = function(aDNI) {
+		if(this.validateDNI(aDNI)){
+			this.DNI=aDNI;
+		}else{
+			throw 'bad DNI';
+		}
+	};
+
+	this.validateDNI=function(aDNI){
+		return aDNI[aDNI.length -1]==='a';
+	};
+
+	this.asString = function() {
+		return this.DNI;
+	};
+}
+
 function Persona() {
 	this.name='';
 	this.weight='';
