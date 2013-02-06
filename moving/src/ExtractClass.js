@@ -10,7 +10,8 @@ function DNI(aDNI) {
 	};
 
 	this.validateDNI=function(aDNI){
-		return aDNI[aDNI.length -1]==='a';
+		var lastDNIChar = aDNI[aDNI.length -1]
+		return lastDNIChar === 'a';
 	};
 
 	this.asString = function() {
