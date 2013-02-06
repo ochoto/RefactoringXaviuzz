@@ -43,7 +43,7 @@ function Persona() {
 	this.changeWork=function(newWork){};
 	
 	this.validateDNI=function(aDNI){
-		return this.DNI.validateDNI(this.getDNI())
+		return this.DNI.validateDNI(aDNI)
 	};
 	
 	this.newMeasure=function(aHeight){};
