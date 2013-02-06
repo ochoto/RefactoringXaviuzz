@@ -35,6 +35,8 @@ function Persona() {
 	this.bloodType=''
 	this.DNI='';
 
+	var letters = 'TRWAGMYFPDXBNJZSQVHLCKE'.toLowerCase().split('')
+
 	this.setDNI = function(aDNI) {
 		this.DNI = new DNI(aDNI)
 	};
@@ -44,7 +46,6 @@ function Persona() {
 	};
 
 	this.computeLetter = function(aDNI) {
-		var letters = 'TRWAGMYFPDXBNJZSQVHLCKE'.toLowerCase().split('')
 		var dniNum = parseInt(aDNI.asString())
 		var letterPos = (dniNum % letters.length)
 		var dniLetter = letters[letterPos]
