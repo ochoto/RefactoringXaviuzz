@@ -25,6 +25,8 @@ function DNI(aDNI) {
 	this.setDNI(aDNI);
 }
 
+
+
 function Persona() {
 	this.name='';
 	this.weight='';
@@ -41,6 +43,14 @@ function Persona() {
 		return this.DNI.asString();
 	};
 
+	this.computeLetter = function(aDNI) {
+		var letters = 'TRWAGMYFPDXBNJZSQVHLCKE'.toLowerCase().split('')
+		var dniNum = parseInt(aDNI.asString())
+		var letterPos = (dniNum % letters.length)
+		var dniLetter = letters[letterPos]
+		return dniLetter
+	};
+
 	this.gainWeight=function(someKilos){};
 
 	this.looseWeight=function(someKilos){};
@@ -54,3 +64,4 @@ function Persona() {
 	this.newMeasure=function(aHeight){};
 
 }
+
