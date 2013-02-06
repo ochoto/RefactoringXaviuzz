@@ -16,6 +16,8 @@ function DNI(aDNI) {
 	this.asString = function() {
 		return this.DNI;
 	};
+
+	this.setDNI(aDNI);
 }
 
 function Persona() {
@@ -27,15 +29,11 @@ function Persona() {
 	this.DNI='';
 
 	this.setDNI = function(aDNI) {
-		if(this.validateDNI(aDNI)){
-			this.DNI=aDNI;
-		}else{
-			throw 'bad DNI';
-		}
+		this.DNI = new DNI(aDNI)
 	};
 
 	this.getDNI = function() {
-		return this.DNI;
+		return this.DNI.asString();
 	};
 
 	this.gainWeight=function(someKilos){};
