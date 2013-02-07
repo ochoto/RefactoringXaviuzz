@@ -11,7 +11,7 @@ function Probe() {
 	this.doComplicatedThings = function() {};
 	this.moreMagic = function() {};
 	this.needsMaintenance = function() {
-		return !this.getFixed();
+		return !this.isFixed();
 	};
 	this.setFixed = function(fixedState) {
 		this.fixed = fixedState;
