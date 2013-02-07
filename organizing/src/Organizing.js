@@ -50,13 +50,13 @@ Letter.obtain = function(letter) {
 };
 
 function Alphabet() {
-
+	var ALPHABET_LENGTH = 24;
 	this.giveMeAn = function(letter) {
 		return Letter.obtain(letter);
 	};
 
 	this.length = function() {
-		return 24;
+		return ALPHABET_LENGTH;
 	};
 
 	this.getVocals = function() {};
