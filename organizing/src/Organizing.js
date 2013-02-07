@@ -39,7 +39,7 @@ function Letter(letter) {
 
 };
 
-Letter.pool = Array();
+Letter.pool = {}
 Letter.obtain = function(letter) {
 	theLetter = Letter.pool[letter];
 	if (!theLetter) {
