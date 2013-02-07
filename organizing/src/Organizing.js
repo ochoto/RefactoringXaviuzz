@@ -50,7 +50,7 @@ Letter.obtain = function(letter) {
 		theLetter = new Letter(letter);
 		Letter.pool[letter] = theLetter;
 	}
-	return new Letter(letter);
+	return theLetter;
 };
 
 function Alphabet() {
