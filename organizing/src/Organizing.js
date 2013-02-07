@@ -43,11 +43,12 @@ function Letter(letter) {
 
 };
 
+Letter.pool = Array();
 Letter.obtain = function(letter) {
-	theLetter = this.pool[letter];
-	if(!theLetter) {
-		aLetter = new Letter(letter);
-		this.pool[letter]=aLetter;
+	theLetter = Letter.pool[letter];
+	if (!theLetter) {
+		theLetter = new Letter(letter);
+		Letter.pool[letter] = theLetter;
 	}
 	return new Letter(letter);
 };
