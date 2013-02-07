@@ -1,14 +1,14 @@
 HumanMetabolism.COMPLEXION_KIND = {
-	SKINNY: 	{calories: 3000},
-	FATTY: 		{calories: 1000},
-	ATHLETIC: 	{calories: 2000},
-	MORBID: 	{calories: 500}
+	SKINNY: 	{ getCalories: function() { return 3000 } },
+	FATTY: 		{ getCalories: function() { return 1000 } },
+	ATHLETIC: 	{ getCalories: function() { return 2000 } },
+	MORBID: 	{ getCalories: function() { return  500 } }
 };
 
 function HumanMetabolism() {
 	this.complexion;
 	this.getDailyCalories = function() {
-		return this.complexion.calories;
+		return this.complexion.getCalories();
 	};
 
 	this.setComplexion = function(aComplexion) {
