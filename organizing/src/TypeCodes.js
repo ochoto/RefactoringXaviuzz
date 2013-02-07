@@ -1,10 +1,12 @@
-function HumanMetabolism() {
+var COMPLEXION_KIND = {
+	SKINNY: 	1,
+	FATTY: 		0,
+	ATHLETIC: 	2,
+	MORBID: 	3
+};
 
+function HumanMetabolism() {
 	this.complexion;
-	this.skinny = 1;
-	this.fatty = 0;
-	this.athletic = 2;
-	this.morbid = 3;
 
 	this.getDailyCalories = function() {
 		var calories = 0;
