@@ -13,17 +13,13 @@ function Probe() {
 	this.needsMaintenance = function() {
 		return !this.isFixed();
 	};
-	this.setFixed = function(fixedState) {
-		this.fixed = fixedState;
-	};
 	this.isFixed = function() {
 		return this.fixed;
 	};
 	this.fix = function() {
 		this.fixed = true;
 	};
-	this.
-	break = function() {
+	this.break = function() {
 		this.fixed = true;
 	};
 };
