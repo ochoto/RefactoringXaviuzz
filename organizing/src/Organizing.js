@@ -20,11 +20,11 @@ function Probe() {
 		return this.fixed;
 	};
 	this.fix = function() {
-		this.setFixed(true);
+		this.fixed = true;
 	};
 	this.
 	break = function() {
-		this.setFixed(false);
+		this.fixed = true;
 	};
 };
 
