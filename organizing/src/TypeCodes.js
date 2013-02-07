@@ -1,4 +1,4 @@
-var COMPLEXION_KIND = {
+HumanMetabolism.COMPLEXION_KIND = {
 	SKINNY: 	{calories: 3000},
 	FATTY: 		{calories: 1000},
 	ATHLETIC: 	{calories: 2000},

@@ -8,10 +8,10 @@ describe("HumanMetabolism", function() {
 
 
   it("needs calories based in complexion", function() {   
-    metabolism.setComplexion(COMPLEXION_KIND.SKINNY);    
+    metabolism.setComplexion(HumanMetabolism.COMPLEXION_KIND.SKINNY);    
     expect(metabolism.getDailyCalories()).toEqual(3000);
     
-    metabolism.setComplexion(COMPLEXION_KIND.MORBID);    
+    metabolism.setComplexion(HumanMetabolism.COMPLEXION_KIND.MORBID);    
     expect(metabolism.getDailyCalories()).toEqual(500);
     
   });
